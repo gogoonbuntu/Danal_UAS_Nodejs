@@ -16,6 +16,7 @@ const { ReadyFunction } = require("./ready")
 const { CPCGIFunction } = require("./CPCGI")
 
 app.use("/", express.static(path.join(__dirname)))
+//app.use(express.urlencoded({extended:true}));
 app.use(bodyParser.urlencoded({extended:false}))
 
 app.get('/ready', (req, res) => {
@@ -36,7 +37,7 @@ app.post('/Success', (req, res) => {
 })
 
 app.post('/BackURL', (req, res) => {
-	//º»ÀÎÀÎÁõ ½ÇÆÐ½Ã µÚ·Î°¡±â ¹öÆ°À» ´©¸£¸é ÀÌµ¿ÇÒ ÆäÀÌÁö¸¦ ¿¬°á
+	//ë³¸ì¸ì¸ì¦ ì‹¤íŒ¨ì‹œ ë’¤ë¡œê°€ê¸° ë²„íŠ¼ì„ ëˆ„ë¥´ë©´ ì´ë™í•  íŽ˜ì´ì§€ë¥¼ ì—°ê²°
 })
 
 app.listen(3003, () => {
