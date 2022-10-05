@@ -3,7 +3,9 @@
 Django version 2.2.4
 Python version 3.7.4
 
-# server.js 에서 JSON config 파일 경로 설정 해주세요!
+## server.js 에서 JSON config 파일 경로 설정 해주세요!
+
+---------------------------
 
 # 기본 순서 : Ready - CPCGI
 Ready : 가맹점 인증, 세션정보 생성
